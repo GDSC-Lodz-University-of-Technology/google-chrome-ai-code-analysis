@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>User Dashboard</h1>
+        <p>A demo project to showcase Chrome's AI Assistant.</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <button id="fetch-users-btn">Fetch User Data</button>
+        </div>
+        <div id="user-list-container">
+            <!-- User cards will be injected here by JavaScript -->
+        </div>
+    </main>
+</div>
+
+<div id="modal-overlay" class="hidden">
+    <div id="modal-content">
+        <h2>User Details</h2>
+        <p>This modal is currently hidden behind the overlay!</p>
+        <button id="close-modal-btn">Close</button>
+    </div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
