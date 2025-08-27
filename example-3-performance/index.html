@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Analysis Demo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Performance Analysis Demo</h1>
+        <p>Two examples of common performance bottlenecks to analyze with the AI Assistant.</p>
+    </header>
+
+    <!-- Demo 1: Inefficient Animation -->
+    <section class="demo-section">
+        <h2>Demo 1: Inefficient Animation (Layout Thrashing)</h2>
+        <p>
+            This animation intentionally reads and writes layout properties in a loop, forcing the browser to recalculate styles on every frame.
+            <strong>To analyze:</strong> Open the Performance panel, record a few seconds of the animation, and ask the AI to explain the "Forced Reflow" or "Layout Thrashing" warnings.
+        </p>
+        <div class="controls">
+            <button id="toggle-animation-btn">Start Animation</button>
+        </div>
+        <div id="animation-container">
+            <!-- Balls will be added here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Demo 2: Slow Table Re-render -->
+    <section class="demo-section">
+        <h2>Demo 2: Slow Table Re-render</h2>
+        <p>
+            This large table re-renders completely every time you edit a single cell.
+            <strong>To analyze:</strong> Open the Performance panel, start recording, edit a cell in the table below, and then stop recording. Find the "Long Task" and ask the AI to explain why it happened and how to optimize the code.
+        </p>
+        <div id="table-container">
+            <!-- The large table will be generated here -->
+        </div>
+    </section>
+
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
