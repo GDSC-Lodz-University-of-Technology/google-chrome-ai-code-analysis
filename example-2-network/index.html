@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network & Performance Demo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Network & Performance Analysis</h1>
+        <p>Use the buttons below to trigger different API requests. Analyze them in the Chrome DevTools Network and
+            Performance panels.</p>
+    </header>
+
+    <main class="demo-grid">
+        <!-- Demo 1: Successful Request -->
+        <div class="demo-card">
+            <h2>Successful Request (200 OK)</h2>
+            <p>Fetches data successfully. Good for explaining basic requests, headers, and response payloads.</p>
+            <button id="btn-success">Fetch Data</button>
+        </div>
+
+        <!-- Demo 2: Unauthorized Request -->
+        <div class="demo-card">
+            <h2>Unauthorized Request (401)</h2>
+            <p>Simulates a failed request due to missing authentication. Perfect for explaining error status codes.</p>
+            <button id="btn-unauthorized">Fetch Secure Data</button>
+        </div>
+
+        <!-- Demo 3: Cached Request -->
+        <div class="demo-card">
+            <h2>Cached Request (304)</h2>
+            <p>The first click fetches data. Subsequent clicks will hit the browser cache and result in a 304
+                response.</p>
+            <button id="btn-cached">Fetch Cached Data</button>
+        </div>
+
+        <!-- Demo 4: Slow Request -->
+        <div class="demo-card">
+            <h2>Slow Request (Performance)</h2>
+            <p>This request is intentionally delayed by 2 seconds on the server. Use the Performance panel to
+                diagnose.</p>
+            <button id="btn-slow">Fetch Slow Data</button>
+        </div>
+    </main>
+
+    <footer>
+        <div id="status-area">
+            <p>Status: Ready</p>
+            <pre id="response-output"></pre>
+        </div>
+    </footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
