@@ -13,7 +13,15 @@ recalculate the layout synchronously, which is very slow.
 
 #### Solution
 
-DO not animate HTML properties. Instead, use CSS transform to put all calculations on the GPU
+Do not animate HTML properties. Instead, use CSS transform to put all calculations on the GPU
 and do not retrigger re layouts every time the ball moves
 
 ### SLOW TABLE RE-RENDER
+
+PERFORMANCE BOTTLENECK: Re-rendering the whole table instead of a single cell
+ON each cell edit whole table is being re-rendered. 
+This is a huge operation that will be even worse if the table is bigger and bigger
+
+#### Solution
+
+Add an identifier to each cell, so you can change the content of only a single cell instead of the whole table.
