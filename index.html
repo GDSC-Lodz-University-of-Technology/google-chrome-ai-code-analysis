@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome AI Assistant - Workshop Demos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Workshop: Debugging with Chrome's AI Assistant</h1>
+        <p>Select a demo below to get started.</p>
+    </header>
+
+    <main class="demo-grid">
+        <!-- Demo 1: HTML, CSS & JS Debugging -->
+        <div class="demo-card">
+            <h2>1. HTML, CSS & JS Debugging</h2>
+            <p>
+                A user profile card project with common bugs. Use this to demonstrate how the AI assistant can explain
+                console errors (like missing `await` or `TypeError`), refactor JavaScript, and solve tricky CSS layout
+                issues like z-index stacking contexts.
+            </p>
+            <a href="./example-1-html-css-js/index.html" class="button">Launch Demo 1</a>
+        </div>
+
+        <!-- Demo 2: Network Request Analysis -->
+        <div class="demo-card">
+            <h2>2. Network Request Analysis</h2>
+            <p>
+                A client-server application that generates various API responses. Use this to show how the AI can
+                explain HTTP status codes (200, 401, 304), interpret request/response headers, and summarize complex
+                JSON payloads directly from the Network panel.
+            </p>
+            <a href="./example-2-network/index.html" class="button">Launch Demo 2</a>
+        </div>
+
+        <!-- Demo 3: Performance Analysis -->
+        <div class="demo-card">
+            <h2>3. Performance Analysis</h2>
+            <p>
+                Features two common performance bottlenecks: an inefficient animation causing "Layout Thrashing" and a
+                large table with slow re-renders causing "Long Tasks". Use the Performance panel to record these issues
+                and ask the AI for an explanation and optimization advice.
+            </p>
+            <a href="./example-3-performance/index.html" class="button">Launch Demo 3</a>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
